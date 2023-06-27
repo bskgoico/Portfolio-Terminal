@@ -49,3 +49,9 @@ main {
     place-items: center;
     overflow: hidden;
 }
+
+.prompt {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    column-gap: 7px;
+}
