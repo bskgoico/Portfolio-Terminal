@@ -87,3 +87,11 @@ input:focus {
     color: var(--command);
     font-weight: 600;
 }
+
+.indent {
+    margin-left: 5px;
+}
+
+.hidden {
+    display: none;
+}
