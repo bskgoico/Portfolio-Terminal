@@ -33,3 +33,19 @@ main {
     overflow: scroll;
     height: 100%;
 }
+
+.terminal div {
+    margin-top: 5px;
+}
+
+.header {
+    padding: 0 20px;
+    height: 25px;
+    margin: 0;
+    background-color: var(--header);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
