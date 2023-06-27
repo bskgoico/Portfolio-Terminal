@@ -55,3 +55,15 @@ main {
     grid-template-columns: auto auto 1fr;
     column-gap: 7px;
 }
+
+input {
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 14px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
