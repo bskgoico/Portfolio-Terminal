@@ -23,3 +23,13 @@ main {
     width: 550px;
     max-width: 550px;
 }
+
+.terminal {
+    background-color: var(--background);
+    color: var(--text);
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: scroll;
+    height: 100%;
+}
