@@ -95,3 +95,9 @@ input:focus {
 .hidden {
     display: none;
 }
+
+@media (max-width: 750px) {
+    main {
+        width: 100%;
+    }
+}
