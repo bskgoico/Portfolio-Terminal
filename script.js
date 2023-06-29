@@ -24,3 +24,27 @@ const enterCommand = (event) => {
     promtInput.scrollIntoView({block: 'start'});
 }
 
+const selectCommandBlock = (command) => {
+    const lowerCommand = command.toLowerCase()
+    switch (lowerCommand) {
+        case 'help':
+        case 'about':
+        case 'social':
+        case 'skills':
+        case 'education':
+        case 'experiencie':
+        case 'projects':
+            return getCommandTemplate(lowerCommand);
+        case 'clear':
+            return clearCommand();
+        default:
+            return notFoundCommand(command);
+    }
+}
+
+const getCommandTemplate = (command) => {
+    const element = document.getElementById(command).cloneNode(true);
+    element.classList.remove('hidden');
+    element.setAttribute('id', null);
+    return element;
+}
