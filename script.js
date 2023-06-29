@@ -48,3 +48,9 @@ const getCommandTemplate = (command) => {
     element.setAttribute('id', null);
     return element;
 }
+
+const clearCommand = () => {
+    terminal.innerHTML = '';
+    const element = document.createElement('span');
+    return element;
+}
