@@ -18,5 +18,9 @@ const enterCommand = (event) => {
     promtElement.classList.remove('hidden');
     promtElement.getElementByClassName('promtCloneInput')[0].innerHTML = event.target.value;
     promtElement.setAttribute('id', null);
-    promtElement.getElementByClassName('promtCloneContent')[0].appendChild(selectCommandBlock(event.target.valueo));
+    promtElement.getElementByClassName('promtCloneContent')[0].appendChild(selectCommandBlock(event.target.value));
+    terminal.appendChild(promtElement);
+    promtInput.value = '';
+    promtInput.scrollIntoView({block: 'start'});
 }
+
