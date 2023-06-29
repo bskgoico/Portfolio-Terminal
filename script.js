@@ -54,3 +54,10 @@ const clearCommand = () => {
     const element = document.createElement('span');
     return element;
 }
+
+const notFoundCommand = (command) => {
+    const element = document.createElement('span');
+    element.innerText = '-bash: ${command}: command not found';
+    element.classList.add('error');
+    return element;
+}
